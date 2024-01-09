@@ -1,0 +1,124 @@
+aside {
+  overflow: auto;
+  height: 100vh;
+}
+aside::-webkit-scrollbar {
+  display: none;
+}
+.sidebar {
+  top: 10px;
+  width: 270px;
+  z-index: 99;
+  background-color: #fff;
+  bottom: 0;
+  margin-top: 0;
+  position: fixed;
+  left: 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: 1px solid #d5dbe1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.sidebar .header-left {
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 10px 10px 0 0;
+  background: #fff;
+  float: left;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  text-align: center;
+  width: 267px;
+  z-index: 1;
+}
+.sidebar .header-left a {
+  display: block;
+  line-height: 80px;
+  text-decoration: none;
+}
+.sidebar .header-left a img {
+  vertical-align: middle;
+  border-style: none;
+}
+.sidebar .header-left a span {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+}
+.sidebar-ul {
+  top: 80px;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border-top: 0;
+  position: relative;
+}
+.menu-title {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 40px;
+  min-height: 40px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.sidebar-ul > li {
+  position: relative;
+  border-bottom: 0 solid #d5dbe1;
+  cursor: pointer;
+  z-index: 0;
+}
+.sidebar-ul li a {
+  text-transform: uppercase;
+  color: #373d3f;
+  display: flex;
+  font-size: 14px;
+  height: auto;
+  line-height: 40px;
+  min-height: 40px;
+  padding: 10px 20px;
+  border-radius: 0;
+  text-decoration: none;
+  border-top: 1px solid #e7e7e7;
+}
+.sidebar-ul li a img {
+  margin-right: 10px;
+}
+.set-pointer {
+  pointer-events: none;
+  position: relative;
+}
+.set-pointer::after {
+  content: ">";
+  position: absolute;
+  right: 0px;
+  font-family: cursive;
+  font-size: 20px;
+  transform: rotate(90deg);
+}
+.sidebar-ul li > ul {
+  list-style: none;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+.sidebar-ul li > ul li a {
+  text-transform: uppercase;
+  color: #373d3fb3;
+  display: flex;
+  font-size: 13px;
+  line-height: 10px;
+  min-height: 40px;
+  padding: 0px 0px 0px 40px;
+  text-decoration: none;
+  border-top: 0px;
+}
+.deactive-menu {
+  display: none;
+}
+.active-menu {
+  display: block !important;
+}

@@ -1,0 +1,9 @@
+.containor{
+    display:flex;
+}
+.containor-col:nth-child(1){
+    width:20%;
+}
+.containor-col:nth-child(2){
+    width:80%;
+}

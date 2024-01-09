@@ -1,0 +1,38 @@
+.add-firm-btn {
+  text-align: end;
+}
+.firm-containor{
+    padding: 15px;
+}
+.add-firm-btn button {
+  background-color: #2fdf84;
+  border: 1px solid #2fdf84;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+}
+.firm-list-search {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.firm-list-search .firm-list-input,
+.firm-list-input input {
+  width: 100%;
+  height: 50px;
+}
+.firm-list-btn{
+    width: 25%; 
+    text-align: center;
+}
+.firm-list-btn button{
+    width: 80%; 
+    border-radius: 20 !important;
+    min-height: 50px;
+    padding: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(180deg,#8944D7 0%,#2FDF84 100%);
+    border: 1px solid transparent;
+}
